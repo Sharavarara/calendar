@@ -1,9 +1,9 @@
-import React, { useContext } from "react";
-import { CalendarContext } from "../../../context";
+import React from "react";
+import useDate from "../../../hooks/useDate";
+
 
 export default function DateContainer() {
-  const value = useContext(CalendarContext)
-  console.log(value)
+  const {date} = useDate();
 
-  return <div>{value}</div>;
+  return <div>{date.selectedDay}</div>;
 }

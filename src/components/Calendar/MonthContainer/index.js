@@ -3,7 +3,6 @@ import useDate from "./../../../hooks/useDate.js";
 
 export default function MonthContainer() {
   const {
-    date,
     daysOfWeekArray,
     dateFormatted,
     getMonthData,
@@ -15,7 +14,6 @@ export default function MonthContainer() {
 
   return (
     <div>
-      <h1>{date.selectedDay}</h1>
       <header>
         <button onClick={prevBtnHandler}>{"<"}</button>
         <h1>{dateFormatted}</h1>
